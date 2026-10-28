@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "google-ads-transparency": {
+      "url": "https://mcp.apify.com?tools=cleandata-labs/google-ads-transparency-explorer",
+      "headers": {
+        "Authorization": "Bearer <YOUR_APIFY_TOKEN>"
+      }
+    }
+  }
+}

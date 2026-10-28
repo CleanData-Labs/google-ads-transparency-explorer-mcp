@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "google-ads-transparency": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@apify/actors-mcp-server",
+        "--tools",
+        "cleandata-labs/google-ads-transparency-explorer"
+      ],
+      "env": {
+        "APIFY_TOKEN": "<YOUR_APIFY_TOKEN>"
+      }
+    }
+  }
+}
