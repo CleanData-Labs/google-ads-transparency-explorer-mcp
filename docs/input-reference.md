@@ -1,4 +1,4 @@
-# Input reference: Google Ads Transparency Explorer
+# Input reference: Google Ads Transparency Scraper
 
 Generated from the Actor's published input schema. All fields are optional unless marked required. The same fields are the arguments of the MCP tool `cleandata-labs--google-ads-transparency-explorer`.
 

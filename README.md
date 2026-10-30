@@ -1,6 +1,6 @@
-<p align="center"><img src="assets/icon.png" alt="Google Ads Transparency Explorer icon" width="96"></p>
+<p align="center"><img src="assets/icon.png" alt="Google Ads Transparency Scraper icon" width="96"></p>
 
-# Google Ads Transparency Explorer (remote MCP tool)
+# Google Ads Transparency Scraper (remote MCP tool)
 
 See the ads any company runs on Google Search, YouTube, Shopping, Maps and Play, from the public Google Ads Transparency Center. Works as a remote MCP tool and through the Apify API.
 
@@ -36,7 +36,7 @@ Ready-made config files are in [`examples/mcp/`](examples/mcp/).
 
 ### Claude (claude.ai and Claude Desktop)
 
-Settings > Connectors > **Add custom connector**. Name: `Google Ads Transparency Explorer`, Remote MCP server URL: `https://mcp.apify.com?tools=cleandata-labs/google-ads-transparency-explorer`. Sign in with Apify when asked.
+Settings > Connectors > **Add custom connector**. Name: `Google Ads Transparency Scraper`, Remote MCP server URL: `https://mcp.apify.com?tools=cleandata-labs/google-ads-transparency-explorer`. Sign in with Apify when asked.
 
 If you prefer a local config file, Claude Desktop can run Apify's official stdio server instead (`claude_desktop_config.json`, needs Node.js 18+):
 
@@ -209,10 +209,10 @@ Other row types: `advertiser` (advertisers mode: `advertiserId`, `name`, `countr
 
 Pay per event on Apify: **$0.0015 per ad** ($1.50 per 1,000 ads). You pay Apify from your own Apify account; nothing is billed through this repository.
 
-- Optional add-ons: full details (`includeDetails`) +$0.0015 per ad; ad text / YouTube video ID (`includeAdText`) +$0.001 per ad, charged only when text or a video ID was actually found.
+- Optional add-ons: full details (`includeDetails`) +$0.0015 per ad; ad text / YouTube video ID (`includeAdText`) +$0.0003 per ad, charged only when text or a video ID was actually found.
 - Advertiser rows (`resultType: "advertisers"`): $0.002 per advertiser.
 - Targets with no ads, blocked requests and errors are free.
-- Apify adds its standard Actor start event ($0.00005 per run). There is no separate compute or proxy fee.
+- Each run also has an Actor start event ($0.001 per run). There is no separate compute or proxy fee.
 - Set a *maximum cost per run* (smallest allowed: $0.10); the run stops cleanly when it is reached.
 
 Apify's free plan includes a monthly platform credit (currently $5), which is enough to try the tool on real data. Prices can change; the [Actor page](https://apify.com/cleandata-labs/google-ads-transparency-explorer) always shows the current price.
@@ -232,8 +232,9 @@ Apify's free plan includes a monthly platform credit (currently $5), which is en
 
 More tools from CleanData Labs:
 
-- [Google Trends Explorer](https://github.com/CleanData-Labs/google-trends-explorer-mcp): Google Trends data for AI agents and scripts: interest over time, interest by region, related and rising queries, Trending Now and keyword suggestions.
-- [URL to Markdown for LLMs](https://github.com/CleanData-Labs/url-to-markdown-mcp): Turn web pages and PDFs into clean, LLM-ready Markdown with metadata, token counts and optional RAG chunks.
+- [Google Trends Scraper](https://github.com/CleanData-Labs/google-trends-explorer-mcp): Google Trends data for AI agents and scripts: interest over time, interest by region, related and rising queries, Trending Now and keyword suggestions.
+- [URL to Markdown Converter](https://github.com/CleanData-Labs/url-to-markdown-mcp): Turn web pages and PDFs into clean, LLM-ready Markdown with metadata, token counts and optional RAG chunks.
+- [Keyword Research Tool — Autocomplete & Trends](https://github.com/CleanData-Labs/seo-keyword-research-for-agents-mcp): Keyword ideas from Google Autocomplete plus Google Trends interest, direction and rising searches, returned as one compact JSON result per seed keyword with a plain-English summary.
 
 ## License
 

@@ -5,7 +5,7 @@ Usage:
     export APIFY_TOKEN=...   # Apify Console > Settings > API & Integrations
     python youtube_video_ads.py
 
-Cost: $0.0015 per ad + $0.001 per ad where text or a video ID is found; 5 ads = max $0.0125.
+Cost: $0.0015 per ad + $0.0003 per ad where text or a video ID is found; 5 ads = max $0.009.
 The run is capped with max_total_charge_usd, so it cannot cost more than $0.10.
 """
 import os
